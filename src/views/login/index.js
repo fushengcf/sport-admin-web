@@ -11,7 +11,7 @@ export default {
     return {
       isLoading: false,
       loginForm: {
-        name: '',
+        phone: '',
         password: '',
         verifyCode: ''
       },

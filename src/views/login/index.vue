@@ -20,11 +20,11 @@
               <img src="./images/user.png" class="user-icon" alt="user">
 
               <el-form-item
-                prop="name"
+                prop="phone"
                 :rules="[{required:true, message:'请填写账号'}]"
               >
                 <input
-                  v-model="loginForm.name"
+                  v-model="loginForm.phone"
                   class="ipt"
                   type="text"
                   maxlength="25"

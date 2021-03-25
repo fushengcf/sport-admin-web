@@ -50,12 +50,10 @@ export const constantRoutes = [
 
     ]
   },
-      User,
-      // Building,
-      // Room,
-      // Major,
-      // Instructor,
-      // Student,
+  Type,
+  Venue,
+  Sport,
+  Subscribe,
   {
     path: '/redirect',
     component: Layout,
@@ -84,13 +82,11 @@ export const constantRoutes = [
  * 需要根据用户角色动态加载的路由（动态菜单）
  */
 /* 系统管理 */
-import User from 'views/user/user.router'
-// import Building from 'views/building/building.router'
-// import Room from 'views/room/room.router'
-// import Major from 'views/major/major.router'
-// import Instructor from 'views/instructor/instructor.router'
-// import Student from 'views/student/student.router'
 
+import Type from 'views/type/type.router'
+import Venue from 'views/venue/venue.router'
+import Sport from 'views/sport/sport.router'
+import Subscribe from 'views/subscribe/subscribe.router'
 // export const asyncRoutes = [
 //   System,
 //   // HouseMaster,

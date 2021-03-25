@@ -26,9 +26,9 @@ const mutations = {
 const actions = {
   // 登录
   login({ commit }, loginForm) {
-    const { name, password } = loginForm
+    const { phone, password } = loginForm
     const params = {
-      name: name.trim(), // 去除字符串头尾空格
+      phone: phone, // 去除字符串头尾空格
       password,
       grant_type: 'password'
     }

@@ -5,11 +5,7 @@ import request from 'utils/request'
 
 // 获取 Token
 function token(params) {
-  return request.post('/user/login', params, {
-    // auth: {
-    //   username: process.env.VUE_APP_CLIENT_ID,
-    //   password: process.env.VUE_APP_CLIENT_SECRET
-    // },
+  return request.post('/admin/login', params, {
     baseURL: 'VUE_APP_AUTH_API'
   })
 }
@@ -17,7 +13,7 @@ function token(params) {
 // 获取用户信息
 function getInfo(params) {
   console.log(params)
-  return request.get('/user/info', params)
+  return request.get('/admin/info', params)
 }
 
 // 获取 权限菜单
