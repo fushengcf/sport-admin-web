@@ -16,7 +16,7 @@ export default {
       this.isSearching = true
       this.errorForm = {}
       this.editForm = {}
-      this.dialogTitle = !item ? '添加角色' : '修改角色信息'
+      this.dialogTitle = !item ? '添加场馆' : '修改场馆信息'
       this.isAdd = !item
       if (!item) {
         this.dialogVisible = true

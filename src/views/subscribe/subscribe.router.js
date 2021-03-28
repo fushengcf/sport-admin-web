@@ -7,7 +7,7 @@ export default {
   name: 'Subscribe',
   meta: {
     title: '预定管理',
-    icon: 'el-icon-notebook-1'
+    icon: 'el-icon-alarm-clock'
   },
   children: [
     {

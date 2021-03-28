@@ -16,9 +16,65 @@
                 label="场馆名称"
                 prop="name"
                 :error="errorForm.name"
-                :rules="[{required:true,message:'请填写专业名称',trigger:'blur'}]"
+                :rules="[{required:true,message:'请填写场馆名称',trigger:'blur'}]"
               >
-                <el-input v-model="editForm.name" placeholder="请填写专业名称" />
+                <el-input v-model="editForm.name" placeholder="请填写场馆名称" />
+              </el-form-item>
+            </el-col>
+
+          </el-row>
+                 <el-row :gutter="10">
+
+            <el-col :span="23">
+              <el-form-item
+                label="联系方式"
+                prop="phone"
+                :error="errorForm.phone"
+                :rules="[{required:true,message:'请填写联系方式',trigger:'blur'}]"
+              >
+                <el-input v-model.number="editForm.phone" placeholder="请填写联系方式" />
+              </el-form-item>
+            </el-col>
+
+          </el-row>
+                 <el-row :gutter="10">
+
+            <el-col :span="23">
+              <el-form-item
+                label="经度"
+                prop="lat"
+                :error="errorForm.lat"
+                :rules="[{required:true,message:'请填写经度',trigger:'blur'}]"
+              >
+                <el-input v-model="editForm.lat" placeholder="请填写经度" />
+              </el-form-item>
+            </el-col>
+
+          </el-row>
+                 <el-row :gutter="10">
+
+            <el-col :span="23">
+              <el-form-item
+                label="纬度"
+                prop="lng"
+                :error="errorForm.lng"
+                :rules="[{required:true,message:'请填写纬度',trigger:'blur'}]"
+              >
+                <el-input v-model="editForm.lng" placeholder="请填写纬度" />
+              </el-form-item>
+            </el-col>
+
+          </el-row>
+                 <el-row :gutter="10">
+
+            <el-col :span="23">
+              <el-form-item
+                label="详细地址"
+                prop="address"
+                :error="errorForm.address"
+                :rules="[{required:true,message:'请填写详细地址',trigger:'blur'}]"
+              >
+                <el-input v-model="editForm.address" placeholder="请填写详细地址" />
               </el-form-item>
             </el-col>
 

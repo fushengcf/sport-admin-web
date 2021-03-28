@@ -36,6 +36,7 @@
     >
       <template slot="action" slot-scope="{ index,record }">
         <el-button type="primary" size="mini" @click="$handleData(record,'modalDrawer')">修改</el-button>
+         <el-button type="warning" size="mini" @click="resetPw(record.id)">重置密码</el-button>
         <el-button type="danger" size="mini" @click="$handleConfirm(record.id,'此操作将删除该用户，是否继续？')">删除</el-button>
       </template>
 

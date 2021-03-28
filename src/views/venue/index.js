@@ -38,11 +38,6 @@ export default {
           label: '场馆地址',
           align: 'center'
         },
-        {
-          prop: 'password',
-          label: '密码',
-          align: 'center'
-        },
 
         {
           prop: 'createTime',
@@ -61,5 +56,15 @@ export default {
 
   mounted() {
     this.$getData()
+  },
+  methods:{
+    resetPw(id){
+      this.$api.venue.resetPassword(id).then(res => {
+        this.$message({
+          message: '密码重置成功',
+          type: 'success'
+        })
+      })
+    }
   }
 }

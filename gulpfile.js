@@ -8,6 +8,6 @@ gulp.task('upload', () => gulp.src('./dist/**').pipe(
     user: 'root',
     pass: 'Zhanhaixin1',
     port: 22,
-    remotePath: '/usr/share/nginx/wen/'
+    remotePath: '/usr/share/nginx/maoping/admin'
   })
 ));

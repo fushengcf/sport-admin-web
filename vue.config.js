@@ -11,7 +11,7 @@ const projectName = defaultSettings.title || 'Vue Element Backend';
 /*
 * node中通过 port = 9527 npm run dev OR npm run dev --port = 9527 改变端口
 */
-const devPort = process.env.port || process.env.npm_config_port || 8888;
+const devPort = process.env.port || process.env.npm_config_port || 3333;
 
 module.exports = {
   publicPath: '/', // 根路径 cli3.0以上使用publicPath替代baseUrl,解决build后找不到静态资源的问题

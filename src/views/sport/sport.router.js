@@ -7,7 +7,7 @@ export default {
   name: 'Sport',
   meta: {
     title: '运动场地管理',
-    icon: 'el-icon-notebook-1'
+    icon: 'el-icon-place'
   },
   children: [
     {

@@ -7,7 +7,7 @@ export default {
   name: 'Type',
   meta: {
     title: '专业管理',
-    icon: 'el-icon-notebook-1'
+    icon: 'el-icon-s-grid'
   },
   children: [
     {

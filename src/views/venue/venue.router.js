@@ -7,7 +7,7 @@ export default {
   name: 'Venue',
   meta: {
     title: '场馆管理',
-    icon: 'el-icon-notebook-1'
+    icon: 'el-icon-location'
   },
   children: [
     {

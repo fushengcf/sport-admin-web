@@ -24,36 +24,39 @@ export default {
           align: 'center'
         },
         {
-          prop: 'typeId',
+          prop: 'type',
           label: '运动类型',
           align: 'center'
         },
         {
-          prop: 'venueId',
+          prop: 'venue',
           label: '场馆名称',
           align: 'center'
         },
         {
-          prop: 'status',
           label: '状态',
-          align: 'center'
+          align: 'center',
+          scopedSlots: { customRender: 'status' },
         },
         {
           prop: 'createTime',
           label: '创建时间',
           align: 'center'
-        },
-        {
-          label: '操作',
-          align: 'center',
-          scopedSlots: { customRender: 'action' },
-          width: 250
         }
-      ]
+      ],
+      types:[],
+      venues:[]
     }
   },
 
   mounted() {
     this.$getData()
+    this.$api.type.getTypes().then(res => {
+      this.types = res.data
+    })
+
+    this.$api.venue.getVenues().then(res => {
+      this.venues = res.data
+    })
   }
 }

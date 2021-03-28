@@ -10,23 +10,35 @@
       </el-col>
 
       <el-col :span="4">
-        <el-input
-          v-model="paramsForm.name"
-          placeholder="预定人联系方式"
-          clearable
-        />
+        <el-select
+          v-model="paramsForm.venueId"
+          placeholder="请选择所属场馆"
+          style="width: 100%"
+          clearable=""
+        >
+          <el-option
+            v-for="item in venues"
+            :key="item.id"
+            :label="item.name"
+            :value="item.id"
+          />
+        </el-select>
       </el-col>
 
-      <el-col :span="4">
-        <el-input v-model="paramsForm.name" placeholder="运动类型" clearable />
-      </el-col>
-
-      <el-col :span="4">
-        <el-input v-model="paramsForm.name" placeholder="所属场馆" clearable />
-      </el-col>
-
-      <el-col :span="4">
-        <el-input v-model="paramsForm.code" placeholder="时间段" clearable />
+   <el-col :span="4">
+        <el-select
+          v-model="paramsForm.typeId"
+          placeholder="请选择运动类型"
+          style="width: 100%"
+          clearable=""
+        >
+          <el-option
+            v-for="item in types"
+            :key="item.id"
+            :label="item.name"
+            :value="item.id"
+          />
+        </el-select>
       </el-col>
 
       <el-col :span="4">
@@ -36,14 +48,6 @@
           :loading="isLoading"
           @click="$getData('search')"
           >查询
-        </el-button>
-
-        <el-button
-          type="primary"
-          :loading="isLoading"
-          icon="el-icon-edit"
-          @click="$handleData('', 'modalDrawer')"
-          >添加
         </el-button>
       </el-col>
     </el-row>

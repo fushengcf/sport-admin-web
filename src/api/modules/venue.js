@@ -34,11 +34,17 @@ function getVenues(){
   return request.get('/venue/allVenue')
 }
 
+
+// 重置密码
+function resetPassword(id) {
+  return request.get(`/venue/reset/${id}`)
+}
 export default {
   list,
   add,
   edit,
   detail,
   _delete,
-  getVenues
+  getVenues,
+  resetPassword
 }
